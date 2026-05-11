@@ -19,3 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/', [mahasiswaController::class, 'index']);
+
+Route::get('/inputdata',[mahasiswaController::class, 'create']);
+
+Route::post('tambahData', [mahasiswaController::class,'store']);

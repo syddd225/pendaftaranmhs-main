@@ -16,6 +16,7 @@ scale=1.0">
 <th>Jalur Pendaftaran</th>
 <th>Gelombang</th>
 <th>Sistem Kuliah</th>
+<th>Program Studi</th>
 </tr>
 @foreach($mhs2 as $datamaba)
 <tr>
@@ -23,8 +24,9 @@ scale=1.0">
 <td>{{$datamaba->nama_pendaftar}}</td>
 <td>{{$datamaba->jalurpendaftaran}}</td>
 <td>{{$datamaba->periode}}</td>
-<td>{{$datamaba->sistemkuliah}}</td>
+<td>{{$datamaba->sistem_kuliah}}</td>
 <td>{{$datamaba->gelombang}}</td>
+<td>{{$datamaba->progdi}}</td>
 </tr>
 @endforeach
 </table>

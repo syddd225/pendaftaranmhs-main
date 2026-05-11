@@ -17,6 +17,7 @@ return new class extends Migration {
             $table->String('jalur_pendaftaran', 25);
             $table->String('gelombang', 25);
             $table->String('sistem_kuliah', 25);
+            $table->String('progdi', 25);
             $table->timestamps();
         });
     }

@@ -19,14 +19,23 @@ class mahasiswaController extends Controller {
      * Show the form for creating a new resource.
      */
     public function create() {
-        //
+        return view('inputData');
     }
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request) {
-        //
+        $tambahDbs = new mahasiswabaru;
+        $tambahDbs->kode_pendaftar =$request['kd_pendaftar'];
+        $tambahDbs->nama_pendaftar=$request['nm_pendaftar'];
+        $tambahDbs->periode=$request['periode'];
+        $tambahDbs->jalur_pendaftaran=$request['jalur_pendaftaran'];
+        $tambahDbs->gelombang=$request['gelombang'];
+        $tambahDbs->sistem_kuliah=$request['sistem_kuliah'];
+        $tambahDbs->progdi=$request['progdi'];
+        $tambahDbs->save();
+        return redirect('/');
     }
 
     /**

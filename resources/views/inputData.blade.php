@@ -28,16 +28,28 @@ crossorigin="anonymous">
 <input type="input" class="form-control" name="jalur_pendaftaran" placeholder="Enter Jalur Pendaftaran">
 </div>
 <div class="form-group">
-<label for="nmpendaftar">Gelombang</label>
-<input type="input" class="form-control" name="gelombang" placeholder="Enter Gelombang">
+    <label for="gelombang">Gelombang</label>
+    <select class="form-control" name="gelombang" id="gelombang">
+        <option value="" disabled selected>-- Pilih Gelombang --</option>
+        <option value="Gelombang Dini">Gelombang Dini</option>
+        <option value="Gelombang 1">Gelombang 1</option>
+        <option value="Gelombang 2">Gelombang 2</option>
+        <option value="Gelombang 3">Gelombang 3</option>
+        <option value="Gelombang 4">Gelombang 4</option>
+    </select>
 </div>
-<div class="form-group">
 <label for="nmpendaftar">Sistem Kuliah</label>
 <input type="input" class="form-control" name="sistem_kuliah" placeholder="Enter Sistem Kuliah">
 </div>
 <div class="form-group">
-<label for="nmpendaftar">Program Studi</label>
-<input type="input" class="form-control" name="progdi" placeholder="Enter Program Studi">
+    <label for="progdi">Program Studi</label>
+    <select class="form-control" name="progdi" id="progdi">
+        <option value="" disabled selected>-- Pilih Program Studi --</option>
+        <option value="S1 Informatika">S1 Informatika</option>
+        <option value="S1 Sistem Informasi">S1 Sistem Informasi</option>
+        <option value="D3 Teknologi Informasi">D3 Teknologi Informasi</option>
+        <option value="D3 Sistem Informasi">D3 Sistem Informasi</option>
+    </select>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>

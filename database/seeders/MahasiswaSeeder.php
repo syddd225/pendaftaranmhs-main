@@ -19,6 +19,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 1',
                 'sistem_kuliah' => 'Pagi',
+                'progdi' => 'Informatika',
             ],
             [
                 'kode_pendaftar' => '241110006',
@@ -27,6 +28,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 1',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=>'Informatika',
             ],
             [
                 'kode_pendaftar' => '24421001',
@@ -35,6 +37,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'Transfer',
                 'gelombang' => 'Gelombang 4',
                 'sistem_kuliah' => 'Sore',
+                'progdi'=> 'Manajemen',
             ],
             [
                 'kode_pendaftar' => '24211026',
@@ -43,6 +46,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 2',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=> 'Manajemen',
             ],
             [
                 'kode_pendaftar' => '24211050',
@@ -51,6 +55,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 2',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=> 'Manajemen',
             ],
             [
                 'kode_pendaftar' => '242211027',
@@ -59,6 +64,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 2',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=> 'Manajemen',
             ],
             [
                 'kode_pendaftar' => '24211048',
@@ -67,6 +73,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 2',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=> 'Manajemen',
             ],
             [
                 'kode_pendaftar' => '24211049',
@@ -75,6 +82,7 @@ class MahasiswaSeeder extends Seeder {
                 'jalur_pendaftaran' => 'PMB Mandiri',
                 'gelombang' => 'Gelombang 2',
                 'sistem_kuliah' => 'Pagi',
+                'progdi'=>'Manajemen',
             ],
         ]);
     }

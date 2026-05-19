@@ -23,3 +23,9 @@ Route::get('/', [mahasiswaController::class, 'index']);
 Route::get('/inputdata',[mahasiswaController::class, 'create']);
 
 Route::post('tambahData', [mahasiswaController::class,'store']);
+
+Route::get('updatedata/{kd_pendaftar}', [mahasiswaController::class, 'edit']);
+
+Route::put('updatedata/{kd_pendaftar}',[mahasiswaController::class, 'update']);
+
+Route::delete('hapusdata/{kd_pendaftar}',[mahasiswaController::class, 'destroy']);

@@ -27,13 +27,13 @@ class mahasiswaController extends Controller {
      */
     public function store(Request $request) {
         $tambahDbs = new mahasiswabaru;
-        $tambahDbs->kode_pendaftar =$request['kd_pendaftar'];
-        $tambahDbs->nama_pendaftar=$request['nm_pendaftar'];
-        $tambahDbs->periode=$request['periode'];
-        $tambahDbs->jalur_pendaftaran=$request['jalur_pendaftaran'];
-        $tambahDbs->gelombang=$request['gelombang'];
-        $tambahDbs->sistem_kuliah=$request['sistem_kuliah'];
-        $tambahDbs->progdi=$request['progdi'];
+        $tambahDbs->kode_pendaftar = $request['kd_pendaftar'];
+        $tambahDbs->nama_pendaftar = $request['nm_pendaftar'];
+        $tambahDbs->periode = $request['periode'];
+        $tambahDbs->jalur_pendaftaran = $request['jalur_pendaftaran'];
+        $tambahDbs->gelombang = $request['gelombang'];
+        $tambahDbs->sistem_kuliah = $request['sistem_kuliah'];
+        $tambahDbs->progdi = $request['progdi'];
         $tambahDbs->save();
         return redirect('/');
     }
@@ -42,27 +42,37 @@ class mahasiswaController extends Controller {
      * Display the specified resource.
      */
     public function show(string $id) {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id) {
-        //
+    public function edit(string $kd_pendaftar) {
+        $kdpendaftar['kd_pend'] = mahasiswabaru::where('kode_pendaftar', $kd_pendaftar)->first();
+        return view('updatedata', $kdpendaftar);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id) {
-        //
+    public function update(Request $request, string $kd_pendaftar) {
+        $updata = mahasiswabaru::where('kode_pendaftar', $kd_pendaftar)->first();
+        $updata->kode_pendaftar = $request['kd_pendaftar'];
+        $updata->nama_pendaftar = $request['nm_pendaftar'];
+        $updata->periode = $request['periode'];
+        $updata->jalur_pendaftaran = $request['jalur_pendaftaran'];
+        $updata->gelombang = $request['gelombang'];
+        $updata->progdi = $request['progdi'];
+        $updata->update();
+        return redirect('/');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id) {
-        //
+    public function destroy(string $kd_pendaftar) {
+        $hapus = mahasiswabaru::where('kode_pendaftar', $kd_pendaftar)->first();
+        $hapus->delete();
+        return redirect('/');
     }
 }
